@@ -36,5 +36,23 @@ public class Main {
 //        System.out.println(quickUnionUF.connected(1, 2));
 //        System.out.println(quickUnionUF.connected(7, 9));
 
+//                WeightedQuickUnionUF
+        WeightedQuickUnionUF weightedQuickUnionUF = new WeightedQuickUnionUF(10);
+
+        weightedQuickUnionUF.printArray();
+
+        weightedQuickUnionUF.union(2, 7);
+        weightedQuickUnionUF.printArray();
+
+        weightedQuickUnionUF.union(7, 9);
+        weightedQuickUnionUF.printArray();
+
+        weightedQuickUnionUF.union(1, 4);
+        weightedQuickUnionUF.printArray();
+
+        System.out.println(weightedQuickUnionUF.connected(2, 9));
+        System.out.println(weightedQuickUnionUF.connected(1, 2));
+        System.out.println(weightedQuickUnionUF.connected(7, 9));
+
     }
 }
